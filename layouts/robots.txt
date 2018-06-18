@@ -1,0 +1,18 @@
+User-agent: Baiduspider
+Disallow: 
+User-agent: Sosospider
+Disallow: 
+User-agent: sogou spider
+Disallow: 
+User-agent: YodaoBot
+Disallow: 
+User-agent: Googlebot
+Disallow: 
+User-agent: Bingbot
+Disallow: 
+User-agent: *
+Disallow: 
+Disallow: /hao/
+Disallow: /secret
+Sitemap: https://blog.pt.spanda.io/sitemap.xml
+Sitemap: https://blog.pt.spanda.io/index.xml

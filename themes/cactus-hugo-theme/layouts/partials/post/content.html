@@ -1,0 +1,23 @@
+<div class="content index my4">
+    <article class="post" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <header>
+            <h1 class="posttitle" itemprop="name headline">
+                {{ .Title }}
+            </h1>
+            <div class="meta">
+                <span class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ .Site.Author.name }}</span>
+                </span>
+                <div class="postdate">
+<time datetime="{{ .Date.Format " Mon, Jan 2, 2006 " }}" itemprop="datePublished">{{ .Date.Format " Mon, Jan 2, 2006 " }}</time>
+                </div>
+                <div class="article-tag">
+                    {{ partial "post/tag.html" . }}
+                </div>
+            </div>
+        </header>
+        <div class="content" itemprop="articleBody">
+ {{ .Content }}
+        </div>
+    </article>
+</div>
