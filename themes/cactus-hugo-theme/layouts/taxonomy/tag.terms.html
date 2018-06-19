@@ -1,18 +1,10 @@
 {{ partial "head.html" . }}
-  <body>
-    <div id="blog">
+<body class="max-width mx-auto px3">
       {{ partial "header.html" . }}
-      {{ partial "sidebar.html" . }}
-      {{ partial "post/header-cover.html" . }}
-      <div id="main" data-behavior="{{ .Scratch.Get "sidebarBehavior" }}"
-        class="{{ with .Params.coverImage }}hasCover{{ end }}
-               {{ if eq .Params.coverMeta "out" }}hasCoverMetaOut{{ else }}hasCoverMetaIn{{ end }}
-               {{ with .Params.coverCaption }}hasCoverCaption{{ end }}">
+
+      <div id="main">
 
         <div id="tags-archives" class="main-content-wrap">
-          <form id="filter-form" action="#">
-            <input name="tag" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_tag" }}" autofocus="autofocus">
-          </form>
           <h4 class="archive-result text-color-base text-xlarge"
               data-message-zero="{{ i18n "global.tags_found.zero" }}"
               data-message-one="{{ i18n "global.tags_found.one" }}"
@@ -49,7 +41,7 @@
          </div>
         
       </div>
-    </div>
+ 
     
     {{ partial "cover.html" . }}
   </body>
