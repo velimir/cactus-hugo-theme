@@ -11,9 +11,16 @@
                 <div class="postdate">
 <time datetime="{{ .Date.Format " Mon, Jan 2, 2006 " }}" itemprop="datePublished">{{ .Date.Format " Mon, Jan 2, 2006 " }}</time>
                 </div>
-                <div class="article-tag">
-                    {{ partial "post/tag.html" . }}
-                </div>
+                {{ if (not (eq .Params.showTags false)) }}
+                    {{ with .Params.tags }} 
+                    {{ $tagsLength := len . }} 
+                        {{ if gt $tagsLength 0 }}
+                        <div class="article-tag">
+                            {{ partial "post/tag.html" . }}
+                        </div>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
             </div>
         </header>
         <div class="content" itemprop="articleBody">

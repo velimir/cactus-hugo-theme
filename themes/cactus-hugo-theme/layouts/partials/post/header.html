@@ -61,10 +61,13 @@
       </ul>
 
     </div>
-    <div id="toc">
-      <ol class="toc">
-              {{ .TableOfContents }}
-      </ol>
-    </div>
+{{ if and (gt .WordCount 100 ) (ne .Params.toc "false") }}
+<div id="toc">
+  <ol class="toc">
+    {{ .TableOfContents }}
+  </ol>
+</div>
+{{ end }}
+   
   </span>
 </div>
