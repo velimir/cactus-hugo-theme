@@ -49,33 +49,23 @@ pygmentsStyle = "fruity"
   url = "/"
 [[menu.header]]
   weight = 2
-  identifier = "Categories"
-  name = "Categories"
-  url = "/categories"
-[[menu.header]]
-  weight = 3
-  identifier = "tags"
-  name = "Tags"
-  url = "/tags"
-[[menu.header]]
-  weight = 4
   identifier = "archives"
   name = "Archives"
   url = "/archives"
 [[menu.header]]
-  weight = 5
+  weight = 3
   identifier = "dalao"
-  name = "大佬"
+  name = "Link"
   url = "/dalao"
 [[menu.header]]
-  weight = 6
+  weight = 4
   identifier = "Disclaimer"
-  name = "免责申明"
+  name = "Disclaimer"
   url = "/disclaimer"
 [[menu.header]]
-  weight = 7
+  weight = 5
   identifier = "about-site"
-  name = "关于本站"
+  name = "About"
   url = "/sitelog"
 
 [[menu.footer]]
@@ -86,20 +76,20 @@ pygmentsStyle = "fruity"
 
 [[menu.footer]]
   weight = 2
-  identifier = "project"
-  name = "Project"
-  url = "/"
+  identifier = "Categories"
+  name = "Categories"
+  url = "/categories"
 
 [[menu.footer]]
   weight = 3
-  identifier = "Link"
-  name = "Link"
-  url = "/"
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags"
 
 [[menu.footer]]
   weight = 4
   identifier = "about-site"
-  name = "关于本站"
+  name = "About"
   url = "/sitelog"
 
 [[menu.links]]
@@ -138,10 +128,7 @@ pygmentsStyle = "fruity"
   dateFormat = "2006年1月2日 15时04分05秒"
   keywords = ["development", "linux", "kubernetes", "docker", "Go", "python"]
   syntaxHighlighter = "highlight.js"
-  clearReading = true
-  hierarchicalCategories = true
   description = "A handbook maintained by ysicing."
-  sidebarBehavior = 2
   coverImage = "doge.jpg"
   [[params.customCSS]]
      href = "css/fruity.css"
@@ -152,11 +139,6 @@ pygmentsStyle = "fruity"
     name = "Weibo"
     icon = "fa-weibo"
     url = "http://service.weibo.com/share/share.php?url=%s"
-
-  [[params.sharingOptions]]
-    name = "Wechat"
-    icon = "fa-wechat"
-    url = "#"
 
   [[params.sharingOptions]]
     name = "Twitter"

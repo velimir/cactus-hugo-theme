@@ -55,7 +55,7 @@
       <ul>
  {{ range .Site.Params.sharingOptions }}
 <li>
-  <a class="icon" target="new" href="{{ printf .url (substr (querify " x " $.Permalink) 2) }}"><i class="fa {{ .icon }}" aria-hidden="true"></i></a>
+  <a class="icon" target="new" href="{{ printf .url (substr (querify " x " $.Permalink) 2) }}"><i class="fab {{ .icon }}" aria-hidden="true"></i></a>
 </li>
 {{ end }}
       </ul>
