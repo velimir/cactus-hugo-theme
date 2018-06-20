@@ -60,14 +60,9 @@
               {{ end }}
             {{ else }}
               {{ range .Data.Terms.ByCount }}
-              <!--
               <div>
 <a href="#posts-list-{{ .Name | urlize }}" class="category-anchor" data-category="{{ .Name }}">{{ .Name }}</a>
               </div>  
--->
-<a class="tag tag--primary tag--small" href="#posts-list-{{ .Name | urlize }}" data-tag="{{ .Name  }}">
-  {{ .Name }}
-</a>
 
               {{ end }}
             {{ end }}
