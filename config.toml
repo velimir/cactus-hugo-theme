@@ -1,4 +1,4 @@
-baseURL = "https://blog.pt.spanda.io"
+baseURL = "https://blog.spanda.io"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 hasCJKLanguage = true
