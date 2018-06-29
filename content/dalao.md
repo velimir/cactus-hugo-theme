@@ -1,6 +1,6 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-date: {{ .Date }}
+title: "Dalao"
+date: 2018-06-28T22:20:48+08:00
 Categories: []
 Description: ""
 Tags: []
@@ -10,11 +10,4 @@ showMeta: false
 showActions: false
 ---
 
-xxxxxx
-
-<!--more-->
-
-
-<!-- toc -->
-
-# Title
+> 说点什么好呢
